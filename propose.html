@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Proposal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .balloon {
+      width: 100px;
+      height: 150px;
+      background-color: #FF6384;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      /* Adjust this value to start balloons outside the viewport */
+      left: calc(100vw * random());
+      /* Randomize horizontal positions */
+      animation: float 5s infinite alternate ease-in-out;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(-100vh);
+      }
+    }
+
+    .container {
+      text-align: center;
+      /* background-color: red; */
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #ff3366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button:hover {
+      background-color: #e6005c;
+    }
+
+    #proposalMessage {
+      margin-top: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .option ul li {
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .option {
+      /* background-color: red; */
+      text-align: center;
+      position: relative;
+      right: 18px;
+    }
+
+    .ballons {
+      position: absolute;
+      text-align: center;
+
+    }
+  </style>
+  <div class="container">
+    <button id="proposalBtn">Click to reveal proposal</button>
+    <div id="proposalMessage" class="hidden">
+      <h1>I Love You!</h1>
+      <p>Will you spend the rest of your life with me?
+        <br>
+        You are the CSS on my HTML!
+      </p>
+      <div class="option">
+        <ul>
+          <li>
+            <a href="https://wa.me/923234673347?text=Thank%20you%20for%20your%20heartfelt%20proposal.%20I've%20given%20it%20serious%20thought%20and%20I'm%20thrilled%20to%20accept.%20Looking%20forward%20to%20the%20journey%20ahead%20with%20you!
+
+            "><button>Yes 😊</button></a>
+          </li>
+          <li>
+            <a href="https://wa.me/923234673347?text=I%20hope%20you're%20well.%20I%20want%20to%20thank%20you%20for%20your%20honesty%20and%20sincerity%20in%20expressing%20your%20feelings%20to%20me.%20After%20careful%20consideration%2C%20I%20need%20to%20share%20that%20I%20don't%20feel%20the%20same%20way%20romantically.%20I%20value%20our%20friendship%20immensely%20and%20hope%20we%20can%20continue%20to%20cherish%20it.%0A%0ABest%20wishes%2C
+            "><button>No 😔</button></a>
+          </li>
+        </ul>
+      </div>
+
+      <body>
+    </div>
+    <audio id="myAudio">
+      <source src="022.mp4" type="audio/mp3">
+    </audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
